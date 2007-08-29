@@ -2,11 +2,12 @@
 
 Name: sndconfig
 Version: 0.70
-Release: %mkrel 9
+Release: %mkrel 10
 License: GPL
 Summary: The Red Hat Linux sound configuration tool.
 Group: System/Configuration/Hardware
 BuildRequires: newt-devel pciutils-devel sharutils
+BuildRequires: libslang-static-devel
 Source: %{name}-%{version}.tar.bz2
 Source1: %{name}.po
 # (blino) include kudzu here since we don't want to release it
@@ -106,5 +107,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/sample2.au
 %{_datadir}/%{name}/sample.midi
 %{_mandir}/man8/*.8*
-
-
