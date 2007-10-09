@@ -4,7 +4,7 @@ Name: sndconfig
 Version: 0.70
 Release: %mkrel 10
 License: GPL
-Summary: The Red Hat Linux sound configuration tool.
+Summary: The Red Hat Linux sound configuration tool
 Group: System/Configuration/Hardware
 BuildRequires: newt-devel pciutils-devel sharutils
 BuildRequires: libslang-static-devel
