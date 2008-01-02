@@ -32,6 +32,7 @@ BuildRequires: dietlibc-devel
 Requires: isapnptools >= 1.16, sox, playmidi, kernel >= 2.2.0
 %endif
 Requires: awesfx
+BuildRoot: %{_tmppath}/%{name}-root
 ExcludeArch: ppc x86_64
 Prefix: %{_prefix}
 URL: ftp://ftp.redhat.com/pub/linux/redhat/rawhide/SRPMS/SRPMS/
