@@ -2,7 +2,7 @@
 
 Name: sndconfig
 Version: 0.70
-Release: %mkrel 11
+Release: %mkrel 12
 License: GPL
 Summary: The Red Hat Linux sound configuration tool
 Group: System/Configuration/Hardware
@@ -32,7 +32,7 @@ BuildRequires: dietlibc-devel
 Requires: isapnptools >= 1.16, sox, playmidi, kernel >= 2.2.0
 %endif
 Requires: awesfx
-BuildRoot: %{_tmppath}/%{name}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 ExcludeArch: ppc x86_64
 Prefix: %{_prefix}
 URL: ftp://ftp.redhat.com/pub/linux/redhat/rawhide/SRPMS/SRPMS/
