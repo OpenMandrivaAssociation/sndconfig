@@ -2,7 +2,7 @@
 
 Name: sndconfig
 Version: 0.70
-Release: %mkrel 16
+Release: %mkrel 17
 License: GPL
 Summary: The Red Hat Linux sound configuration tool
 Group: System/Configuration/Hardware
@@ -26,6 +26,7 @@ Patch5: kudzu-1.1.40-movl.patch
 # (blino) use u_int8_t instead of byte, from kudzu-1.2.24
 Patch6: kudzu-1.1.40-byte.patch
 Patch7: kudzu-1.1.40-fix-ifmask.patch
+Patch8: mips_buildfix.patch
 # (blino) diet is needed to build kudzu
 BuildRequires: dietlibc-devel
 %ifarch %{ix86} alpha
@@ -65,6 +66,7 @@ pushd kudzu
 %patch6 -p1
 %patch7 -p1
 popd
+%patch8 -p1 -b .mips
 
 # (blino) find_requires script to exclude GLIBC_PRIVATE Requires
 # (adapted from glibc spec file)
