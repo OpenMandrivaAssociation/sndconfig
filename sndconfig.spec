@@ -2,7 +2,7 @@
 
 Name: sndconfig
 Version: 0.70
-Release: %mkrel 19
+Release: %mkrel 20
 License: GPL
 Summary: The Red Hat Linux sound configuration tool
 Group: System/Configuration/Hardware
