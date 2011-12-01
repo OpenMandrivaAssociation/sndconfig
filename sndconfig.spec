@@ -82,24 +82,24 @@ chmod +x find_requires.sh
 %make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %makeinstall
 
-mv $RPM_BUILD_ROOT%{_sbindir}/%{name}{,.real}
-cat > $RPM_BUILD_ROOT%{_sbindir}/%{name} << EOF
+mv %{buildroot}%{_sbindir}/%{name}{,.real}
+cat > %{buildroot}%{_sbindir}/%{name} << EOF
 #!/bin/sh
 %{_sbindir}/%{name}.real && /sbin/generate-modprobe.conf > /etc/modprobe.d/sndconfig.conf
 EOF
-chmod +x $RPM_BUILD_ROOT%{_sbindir}/%{name}
+chmod +x %{buildroot}%{_sbindir}/%{name}
 
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES
-msgfmt %SOURCE1 -o $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES/%{name}.mo
+mkdir -p %{buildroot}%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES
+msgfmt %SOURCE1 -o %{buildroot}%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES/%{name}.mo
 
 %find_lang %{name}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr (-,root,root)
