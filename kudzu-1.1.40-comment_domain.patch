@@ -1,0 +1,11 @@
+--- kudzu/pci.c.domain	2003-11-21 06:57:17.000000000 +0100
++++ kudzu/pci.c	2004-01-22 17:45:59.000000000 +0100
+@@ -831,7 +831,7 @@
+ 			free(dev->driver);
+ 			dev->driver = strdup("8139cp");
+ 		}
+-		dev->pcidom = p->domain;
++		/* dev->pcidom = p->domain; */
+ 		dev->pcibus = p->bus;
+ 		dev->pcidev = p->dev;
+ 		dev->pcifn = p->func;

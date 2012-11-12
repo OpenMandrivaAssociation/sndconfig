@@ -1,0 +1,29 @@
+--- kudzu-1.1.40/pci.c.byte	2006-01-31 19:01:11.000000000 +0100
++++ kudzu-1.1.40/pci.c	2006-02-02 12:17:15.000000000 +0100
+@@ -679,7 +679,7 @@
+     longjmp(pcibuf,1);
+ }
+ 
+-static int isDisabled(struct pci_dev *p, byte config[256]) {
++static int isDisabled(struct pci_dev *p, u_int8_t config[256]) {
+ 	int disabled;
+ 	int i;
+ #ifdef __i386__
+@@ -750,7 +750,7 @@
+ 	    memset(cardbus_bridges,'\0',32);
+ 	    /* enumerate cardbus bridges first */
+ 	    for (p = pacc->devices; p; p=p->next) {
+-		byte config[256];
++		u_int8_t config[256];
+ 		
+ 		memset(config,'\0',256);
+ 	        pci_read_block(p, 0, config, 64);
+@@ -763,7 +763,7 @@
+ 	    }
+ 	    
+ 	    for (p = pacc->devices; p; p=p->next) {
+-		byte config[256];
++		u_int8_t config[256];
+ 		int bustype;
+ 		unsigned int subvend, subdev;
+ 		struct pciDevice *dev,*a_dev;

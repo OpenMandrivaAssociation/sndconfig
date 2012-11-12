@@ -1,0 +1,24 @@
+Index: sndconfig-0.70/sndconfig.c
+===================================================================
+--- sndconfig-0.70.orig/sndconfig.c
++++ sndconfig-0.70/sndconfig.c
+@@ -775,6 +775,9 @@ static int GetCardType(enum cards *type)
+ #ifdef __ia64__
+ 	    pci
+ #endif	    
++#ifdef __mips__
++	    pci
++#endif
+ 	    && cards[rc].avail)
+ 	    newtListboxAddEntry(lbox, _(cards[rc].descr),
+ 				(void *) cards[rc].type);
+@@ -790,6 +793,9 @@ static int GetCardType(enum cards *type)
+ #if defined(__alpha__) || defined(__i386__)
+ 	newtListboxSetCurrent(lbox, SBORIG);
+ #endif
++#ifdef __mips__
++	newtListboxSetCurrent(lbox, VIA82CXXX);
++#endif
+     else
+ 	newtListboxSetCurrent(lbox, *type);
+ 

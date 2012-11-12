@@ -1,0 +1,25 @@
+--- sndconfig-0.70/sndconfig.c.orig	2003-01-01 03:59:55.000000000 +0100
++++ sndconfig-0.70/sndconfig.c	2009-04-11 15:38:06.000000000 +0200
+@@ -837,6 +837,7 @@
+ 	return 0;
+ }
+ 
++#if 0
+ int isAvailable(char *modulename)
+ {
+ 	struct utsname utsbuf;
+@@ -904,6 +905,14 @@
+ 	}
+ 	return 0;
+ }
++#endif
++
++int isAvailable(char *modulename)
++{
++	char buf[255];	
++	snprintf(buf, 255, "modprobe -l|egrep -q '^.*/%s\.k?o(\.gz)?$'", modulename);
++	return system(buf) == 0;
++}
+ 
+ static int EditSettings(int pnpprobe, struct settings *set,
+ 			struct settings *currset)

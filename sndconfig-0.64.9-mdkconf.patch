@@ -1,0 +1,28 @@
+--- sndconfig-0.64.9/sndconfig.c.chmou	Mon Jun 18 16:52:01 2001
++++ sndconfig-0.64.9/sndconfig.c	Mon Jun 18 17:03:31 2001
+@@ -1251,8 +1251,6 @@
+ 
+ 
+     fprintf(t, "alias sound-slot-0 %s\n", set->modulename);
+-    fprintf(t, "post-install sound-slot-0 /bin/aumix-minimal -f /etc/.aumixrc -L >/dev/null 2>&1 || :\n");
+-    fprintf(t, "pre-remove sound-slot-0 /bin/aumix-minimal -f /etc/.aumixrc -S >/dev/null 2>&1 || :\n");
+     /* If the user has an ISA card and > 16MB of memory,
+      * we want to lock ISA dma buffers. */
+     if (!stat("/proc/kcore", &memstat))
+@@ -1297,16 +1295,6 @@
+ 	    fprintf(t, "options adlib_card io=0x388\n");
+ 	} else if (set->bus == isa) {
+ 		fprintf(t, "options %s isapnp=1\n",set->modulename);
+-	}
+-	if (devs && !strcmp(devs[0]->driver,"i810_audio")) {
+-		if (
+-		    ((struct pciDevice *)devs[0])->subVendorId == 0x1028 &&
+-		    ( ((struct pciDevice *)devs[0])->subDeviceId == 0x00d2 ||
+-		     /* ((struct pciDevice *)devs[0])->subDeviceId == 0x00d8 || */
+-		     ((struct pciDevice *)devs[0])->subDeviceId == 0x00be )) {
+-			fprintf(t, "options i810_audio ftsodell=1\n");
+-		}
+-	    
+ 	}
+     } else {
+ 	fprintf(t, "options %s", set->modulename);

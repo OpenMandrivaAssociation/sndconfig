@@ -1,0 +1,22 @@
+--- kudzu-1.1.40/ddcprobe/lrmi.c.ifmask	2009-04-11 16:04:41.000000000 +0200
++++ kudzu-1.1.40/ddcprobe/lrmi.c	2009-04-11 16:05:26.000000000 +0200
+@@ -11,6 +11,19 @@
+ This software has NO WARRANTY.  Use it at your own risk.
+ */
+ 
++#ifndef TF_MASK
++#define TF_MASK X86_EFLAGS_TF
++#endif
++#ifndef IF_MASK
++#define IF_MASK X86_EFLAGS_IF
++#endif
++#ifndef IOPL_MASK
++#define IOPL_MASK X86_EFLAGS_IOPL
++#endif
++#ifndef VIF_MASK
++#define VIF_MASK X86_EFLAGS_VIF
++#endif
++
+ #include <signal.h>
+ #include <stdio.h>
+ #include <string.h>
