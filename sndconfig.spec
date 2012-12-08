@@ -2,7 +2,7 @@
 
 Name: sndconfig
 Version: 0.70
-Release: %mkrel 20
+Release: %mkrel 22
 License: GPL
 Summary: The Red Hat Linux sound configuration tool
 Group: System/Configuration/Hardware
@@ -82,24 +82,24 @@ chmod +x find_requires.sh
 %make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
 
 %install
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %makeinstall
 
-mv %{buildroot}%{_sbindir}/%{name}{,.real}
-cat > %{buildroot}%{_sbindir}/%{name} << EOF
+mv $RPM_BUILD_ROOT%{_sbindir}/%{name}{,.real}
+cat > $RPM_BUILD_ROOT%{_sbindir}/%{name} << EOF
 #!/bin/sh
 %{_sbindir}/%{name}.real && /sbin/generate-modprobe.conf > /etc/modprobe.d/sndconfig.conf
 EOF
-chmod +x %{buildroot}%{_sbindir}/%{name}
+chmod +x $RPM_BUILD_ROOT%{_sbindir}/%{name}
 
-mkdir -p %{buildroot}%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES
-msgfmt %SOURCE1 -o %{buildroot}%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES/%{name}.mo
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES
+msgfmt %SOURCE1 -o $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES/%{name}.mo
 
 %find_lang %{name}
 
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr (-,root,root)
@@ -110,3 +110,75 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}/sample2.au
 %{_datadir}/%{name}/sample.midi
 %{_mandir}/man8/*.8*
+
+
+%changelog
+* Fri May 06 2011 Oden Eriksson <oeriksson@mandriva.com> 0.70-20mdv2011.0
++ Revision: 669994
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 0.70-19mdv2011.0
++ Revision: 607547
+- rebuild
+
+* Mon Mar 15 2010 Oden Eriksson <oeriksson@mandriva.com> 0.70-18mdv2010.1
++ Revision: 520220
+- rebuilt for 2010.1
+
+* Mon Sep 28 2009 Olivier Blin <oblin@mandriva.com> 0.70-17mdv2010.0
++ Revision: 450363
+- fix mips specific build failure (from Arnaud Patard)
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 0.70-16mdv2010.0
++ Revision: 427201
+- rebuild
+
+* Sat Apr 11 2009 Funda Wang <fwang@mandriva.org> 0.70-15mdv2009.1
++ Revision: 366321
+- fix ifmask defination
+- rediff modprobe patch
+
+  + Antoine Ginies <aginies@mandriva.com>
+    - rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild early 2009.0 package (before pixel changes)
+
+* Tue Jun 10 2008 Oden Eriksson <oeriksson@mandriva.com> 0.70-12mdv2009.0
++ Revision: 217580
+- rebuilt against dietlibc-devel-0.32
+
+* Wed Mar 05 2008 Oden Eriksson <oeriksson@mandriva.com> 0.70-11mdv2008.1
++ Revision: 179512
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - fix summary-ended-with-dot
+
+* Wed Aug 29 2007 Oden Eriksson <oeriksson@mandriva.com> 0.70-10mdv2008.0
++ Revision: 74423
+- fix build deps (libslang-static-devel)
+
+
+* Wed Mar 07 2007 Michael Scherer <misc@mandriva.org> 0.70-9mdv2007.1
++ Revision: 134166
+- there is no isa support on x86_64 motherboard, and it doesn't compile on it
+  ,harddrake is doing fine for other card.
+
+  + Pascal Terjan <pterjan@mandriva.org>
+    - Import sndconfig
+
+* Thu Feb 02 2006 Olivier Blin <oblin@mandriva.com> 0.70-9mdk
+- make the package build (the maintainer of this package should
+  really consider upgrading to kudzu-1.2.24):
+  o Patch5: fix assembler errors, from kudzu-1.2.24
+  o Patch6: use u_int8_t instead of byte, from kudzu-1.2.24
+
+* Tue Jan 31 2006 Olivier Blin <oblin@mandriva.com> 0.70-8mdk
+- don't overwrite modprobe.conf, write converted config in
+  /etc/modprobe.d/sndconfig.conf (#12876)
+

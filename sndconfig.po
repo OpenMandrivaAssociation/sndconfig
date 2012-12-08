@@ -1,0 +1,633 @@
+# Big5 Chinese Traditional Translation for sndconfig.
+
+# Copyright (C) 2001 Geoffrey Lee
+# Geoffrey Lee <snailtalk@users.sourceforge.net>, 2001.
+# Minor revision by Andrew Lee <andrew@linux.org.tw>, 2001
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: sndconfig 0.57\n"
+"POT-Creation-Date: 2000-08-07 00:27-0400\n"
+"PO-Revision-Date: 2001-01-30 HO:MI+0800\n"
+"Last-Translator: Geoffrey Lee <snailtalk@users.sourceforge.net>\n"
+"Language-Team: Chinese(traditional) <zh@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=big5\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../sndconfig.c:69
+msgid "ACER Notebook sound"
+msgstr ""
+
+#: ../sndconfig.c:72
+msgid "AD1816 (Acer FX-3D, HP Kayak)"
+msgstr ""
+
+#: ../sndconfig.c:74
+msgid "AdLib"
+msgstr ""
+
+#: ../sndconfig.c:78
+msgid "ALI M15xx Chipset Audio"
+msgstr ""
+
+#: ../sndconfig.c:82
+msgid "Advance Logic ALS-007"
+msgstr ""
+
+#: ../sndconfig.c:85
+msgid "Advance Logic ALS-100/110"
+msgstr ""
+
+#: ../sndconfig.c:89
+msgid "Aztech Sound Galaxy Waverider Pro 32-3D, Washington 16"
+msgstr ""
+
+#: ../sndconfig.c:94
+msgid "CMI8330 sound chip (many motherboards)"
+msgstr "CMI8330 sound chip (多數主機板)"
+
+#: ../sndconfig.c:96
+msgid "C-Media PCI Audio (8338, 8738)"
+msgstr ""
+
+#: ../sndconfig.c:100
+msgid "Compaq Deskpro XL Sound"
+msgstr ""
+
+#: ../sndconfig.c:104
+msgid "Crystal CS423x sound chip"
+msgstr ""
+
+#: ../sndconfig.c:107
+msgid "Crystal SoundFusion CS46xx"
+msgstr ""
+
+#: ../sndconfig.c:110
+msgid "Ensoniq AudioPCI 1370 (SoundBlaster 64/128 PCI)"
+msgstr ""
+
+#: ../sndconfig.c:113
+msgid "Creative/Ensoniq AudioPCI 1371"
+msgstr ""
+
+#: ../sndconfig.c:116
+msgid "Ensoniq SoundScape"
+msgstr ""
+
+#: ../sndconfig.c:119
+msgid "Ensoniq SoundScape VIVO"
+msgstr ""
+
+#: ../sndconfig.c:122
+msgid "ESS688 AudioDrive"
+msgstr ""
+
+#: ../sndconfig.c:125
+msgid "ESS1688 AudioDrive"
+msgstr ""
+
+#: ../sndconfig.c:128
+msgid "ESS1868 AudioDrive"
+msgstr ""
+
+#: ../sndconfig.c:130
+msgid "ESS Maestro 1/2/2E"
+msgstr ""
+
+#: ../sndconfig.c:132
+msgid "ESS Solo 1"
+msgstr ""
+
+#: ../sndconfig.c:136
+msgid "Gravis UltraSound"
+msgstr ""
+
+#: ../sndconfig.c:140
+msgid "Gravis UltraSound MAX"
+msgstr ""
+
+#: ../sndconfig.c:144
+msgid "Gravis UltraSound PnP"
+msgstr ""
+
+#: ../sndconfig.c:146
+msgid "Intel i810 AC97 Audio"
+msgstr ""
+
+#: ../sndconfig.c:150
+msgid "Logitech SoundMan Games (not SM16 or SM Wave!)"
+msgstr "Logitech SoundMan Games (並不是 SM16 或 SM Wave!)"
+
+#: ../sndconfig.c:153
+msgid "MediaTrix AudioTrix Pro"
+msgstr ""
+
+#: ../sndconfig.c:157
+msgid "MediaVision Jazz16 (ProSonic, SoundMan Wave)"
+msgstr ""
+
+#: ../sndconfig.c:162
+msgid "Mozart/MAD16 (OPTi 82C928)"
+msgstr ""
+
+#: ../sndconfig.c:166
+msgid "MAD16 Pro (OPTi 82C929/82C930)"
+msgstr ""
+
+#: ../sndconfig.c:169
+msgid "miroSOUND PCM12"
+msgstr ""
+
+#: ../sndconfig.c:171
+msgid "NeoMagic MagicMedia 256AV"
+msgstr ""
+
+#: ../sndconfig.c:174
+msgid "OPL3-SA1 sound chip"
+msgstr ""
+
+#: ../sndconfig.c:177
+msgid "OPL3-SA2/3/x sound chip"
+msgstr ""
+
+#: ../sndconfig.c:182
+msgid "Pro Audio Spectrum/Studio 16, Logitech SoundMan 16"
+msgstr ""
+
+#: ../sndconfig.c:187
+msgid "PSS (Orchid SW32, Cardinal DSP16)"
+msgstr ""
+
+#: ../sndconfig.c:190
+msgid "S3 SonicVibes"
+msgstr ""
+
+#: ../sndconfig.c:193
+msgid "Sound Blaster"
+msgstr ""
+
+#: ../sndconfig.c:196
+msgid "Sound Blaster Pro"
+msgstr ""
+
+#: ../sndconfig.c:199
+msgid "Sound Blaster 16"
+msgstr ""
+
+#: ../sndconfig.c:202
+msgid "Sound Blaster AWE32/64"
+msgstr ""
+
+#: ../sndconfig.c:204
+msgid "Sound Blaster Live!"
+msgstr ""
+
+#: ../sndconfig.c:206
+msgid "Trident 4D-Wave NX/DX"
+msgstr ""
+
+#: ../sndconfig.c:212
+msgid "Turtle Beach MultiSound Classic/Monterey/Tahiti"
+msgstr ""
+
+#: ../sndconfig.c:220
+msgid "Turtle Beach MultiSound Pinnacle/Fiji"
+msgstr ""
+
+#: ../sndconfig.c:225
+msgid "Turtle Beach Maui/Tropez/Tropez+"
+msgstr ""
+
+#: ../sndconfig.c:229
+msgid "VIA 82CXXX PCI Audio"
+msgstr ""
+
+#: ../sndconfig.c:232
+msgid "Windows Sound System (AD1848/CS4248/CS4231)"
+msgstr ""
+
+#: ../sndconfig.c:235
+msgid "Yamaha YMF PCI Audio (Legacy SB Support *only*)"
+msgstr "Yamaha YMF PCI Audio (只有舊式 SB 支援)"
+
+#: ../sndconfig.c:238
+msgid "AMD7930 (sun4c)"
+msgstr ""
+
+#: ../sndconfig.c:241
+msgid "CS4231 (some sun4m, sun4u)"
+msgstr "CS4231 (有些 sun4m, sun4u)"
+
+#: ../sndconfig.c:244
+msgid "DBRI (SPARCstation 10, 20, LX, Voyager)"
+msgstr ""
+
+#: ../sndconfig.c:320
+msgid "  <Tab>/<Alt-Tab> between elements  |  Use <Enter> to edit a selection"
+msgstr "  <Tab>/<Alt-Tab> 選擇元素 |  用 <Enter> 編輯所選選項"
+
+#: ../sndconfig.c:324
+#, c-format
+msgid "Sound Configuration Utility %s                   (C) 2000 Red Hat, Inc."
+msgstr ""
+
+#. file format is pretty static, if you change then
+#. this program wont read it right.
+#: ../sndconfig.c:609
+msgid "# THIS FILE IS WRITTEN BY SNDCONFIG\n"
+msgstr "# 這是用 SNDCONFIG 編寫的檔案\n"
+
+#: ../sndconfig.c:610
+msgid "# PLEASE USE SNDCONFIG TO MODIFY\n"
+msgstr "# 請用 SNDCONFIG  更改\n"
+
+#: ../sndconfig.c:611
+msgid "# TO CHANGE THIS FILE!\n"
+msgstr "# 更改此檔案!\n"
+
+#: ../sndconfig.c:612
+msgid "# There should be no spaces at the start of a line\n"
+msgstr "# 每行的開始不應有空格\n"
+
+#: ../sndconfig.c:613
+msgid "# or around the '=' sign\n"
+msgstr "# 或在 '=' 的周圍\n"
+
+#: ../sndconfig.c:625
+msgid "Card Type"
+msgstr "音效卡種類"
+
+#: ../sndconfig.c:629
+msgid "Please select your card:"
+msgstr "請選擇您的音效卡:" 
+
+#: ../pnpconf.c:841 ../sndconfig.c:666 ../sndconfig.c:908 ../sndconfig.c:1045
+#: ../sndconfig.c:1209 ../sndconfig.c:1224 ../sndconfig.c:1238
+#: ../sndconfig.c:1253 ../sndconfig.c:1263 ../sndconfig.c:1270
+#: ../sndconfig.c:1299 ../sndconfig.c:1318 ../sndconfig.c:1339
+#: ../sndconfig.c:1448 ../sndconfig.c:1471 ../sndconfig.c:1512
+#: ../sndconfig.c:1562 ../sndconfig.c:1579 ../sndconfig.c:1586
+#: ../sndconfig.c:1594 ../sndconfig.c:1603 ../sndconfig.c:1648
+#: ../sndconfig.c:1666 ../sndconfig.c:1674 ../sndconfig.c:1697
+#: ../sndconfig.c:1722 ../sndconfig.c:1753
+msgid "Ok"
+msgstr "確定"
+
+#: ../sndconfig.c:667 ../sndconfig.c:908 ../sndconfig.c:1448
+#: ../sndconfig.c:1753
+msgid "Cancel"
+msgstr "取消"
+
+#: ../sndconfig.c:766
+msgid "I/O PORT"
+msgstr ""
+
+#: ../sndconfig.c:779
+msgid "IRQ"
+msgstr ""
+
+#: ../sndconfig.c:794
+msgid "8-bit DMA"
+msgstr ""
+
+#: ../sndconfig.c:796
+msgid "DMA 1"
+msgstr ""
+
+#: ../sndconfig.c:798
+msgid "DMA"
+msgstr ""
+
+#: ../sndconfig.c:817
+msgid "CONFIG I/O"
+msgstr "I/O 設定"
+
+#: ../sndconfig.c:819
+msgid "16-bit DMA"
+msgstr ""
+
+#: ../sndconfig.c:821
+msgid "DMA 2"
+msgstr ""
+
+#: ../sndconfig.c:842
+msgid "MPU I/O"
+msgstr ""
+
+#: ../sndconfig.c:861
+msgid "MPU IRQ"
+msgstr ""
+
+#: ../sndconfig.c:881
+msgid "CONTROL I/O"
+msgstr ""
+
+#: ../sndconfig.c:883
+msgid "SB I/O"
+msgstr ""
+
+#: ../sndconfig.c:885
+msgid "BASE MEMORY"
+msgstr ""
+
+#: ../sndconfig.c:911
+msgid ""
+"Your sound card is a PnP device, so its settings can be configured w/o "
+"setting any dip switches.  Choose the values you would like to use from the "
+"menus below."
+msgstr "你的音效卡是 PnP 裝置, 所以設定值不必調整 dip switch. 請從以下的列表"
+"選出您喜歡的設定值."
+
+#: ../sndconfig.c:918
+msgid ""
+"Please adjust the settings below to match the dip switch settings on your "
+"sound card."
+msgstr "請調整適合您音效卡的 dip switch 設定."
+
+#: ../sndconfig.c:963
+msgid "Card Settings"
+msgstr "卡設定"
+
+#: ../pnpconf.c:841 ../sndconfig.c:1045
+msgid "File Exists"
+msgstr "檔案已存在"
+
+#: ../sndconfig.c:1047
+msgid ""
+"There is already a file called /etc/modules.conf. The existing file will be "
+"renamed /etc/modules.conf.bak and a new file will be written."
+msgstr "已有名叫 /etc/modules.conf 的檔案. 現有的檔會被改名為\n"
+"/etc/modules.conf.bak 而新的檔案會被命名為 /etc/modules.conf."
+
+#. (set->type == GUS) || (set->type == GUSMAX) ||
+#. (set->type == GUSPNP) ||
+#: ../sndconfig.c:1209 ../sndconfig.c:1299
+msgid "Sound Card Test"
+msgstr "音效卡測試"
+
+#: ../sndconfig.c:1210
+msgid ""
+"A sound sample will now be played to determine if your sound card has been "
+"correctly configured."
+msgstr "假如您的音效卡設定正確，將會聽到示範音效"
+
+#: ../sndconfig.c:1220
+msgid ""
+"The following error occurred running the isapnp program:\n"
+"\n"
+msgstr "嘗試執行 isapnp 程式時遇到以下的錯誤:\n"
+"\n"
+
+#: ../sndconfig.c:1224
+msgid "isapnp error"
+msgstr "isapnp 錯誤"
+
+#: ../sndconfig.c:1234 ../sndconfig.c:1314
+msgid ""
+"The following error occurred running the modprobe program:\n"
+"\n"
+msgstr "嘗試執行 modprobe 程式時遇到以下的錯誤:\n"
+"\n"
+
+#: ../sndconfig.c:1238 ../sndconfig.c:1318
+msgid "modprobe error"
+msgstr "modprobe 錯誤"
+
+#: ../sndconfig.c:1249 ../sndconfig.c:1335
+msgid ""
+"The following error occurred playing the sample:\n"
+"\n"
+msgstr "播放示範音效時遇到以下錯誤:\n"
+"\n"
+
+#: ../sndconfig.c:1253 ../sndconfig.c:1270 ../sndconfig.c:1339
+msgid "Unable To Play Audio"
+msgstr "不能播放音效"
+
+#: ../sndconfig.c:1263
+msgid "Sample Not Found"
+msgstr "找不到示範音效"
+
+#: ../sndconfig.c:1265
+msgid "The sound sample does not appear to be installed."
+msgstr "示範音效檔好像仍未安裝"
+
+#: ../sndconfig.c:1271
+msgid "An error occurred opening /dev/audio"
+msgstr "開啟 /dev/audio 時發生錯誤"
+
+#: ../sndconfig.c:1288 ../sndconfig.c:1346
+msgid "Test Result"
+msgstr "測試結果"
+
+#: ../sndconfig.c:1288 ../sndconfig.c:1346 ../sndconfig.c:1492
+msgid "Yes"
+msgstr "是"
+
+#: ../sndconfig.c:1288 ../sndconfig.c:1346 ../sndconfig.c:1492
+msgid "No"
+msgstr "否"
+
+#: ../sndconfig.c:1289 ../sndconfig.c:1347
+msgid "Were you able to hear the sample?"
+msgstr "你能否聽到示範音效?"
+
+#: ../sndconfig.c:1300
+msgid ""
+"A MIDI sample will now be played to determine if your sound card's synth has "
+"been correctly configured."
+msgstr "假如您的音效卡的設定正確，將會聽到 MIDI 示範音樂"
+
+#: ../sndconfig.c:1376
+msgid ""
+"\n"
+"ERROR - You must be root to run sndconfig.\n"
+msgstr ""
+"\n"
+"錯誤 - 您必要是 root 才可以執行 sndconfig.\n"
+
+#: ../sndconfig.c:1386
+msgid ""
+"Usage: sndconfig [--help] [--noprobe] [--noautoconfig]\n"
+"     --noprobe    do not probe for PnP sound cards.\n"
+"     --noautoconfig do not autoconfigure any probed PnP sound cards.\n"
+"     --quiet automatically configure without user input (use with caution)\n"
+"\n"
+msgstr ""
+
+
+#: ../sndconfig.c:1412
+msgid ""
+"Usage: sndconfig [--help] [--noprobe]\n"
+"     --noprobe    do not probe for PnP sound cards.\n"
+"     --quiet automatically configure without user input (use with caution)\n"
+"\n"
+msgstr ""
+
+#: ../sndconfig.c:1427
+msgid ""
+"Usage: sndconfig [--help]\n"
+"\n"
+msgstr ""
+
+#: ../sndconfig.c:1448
+msgid "Introduction"
+msgstr "序"
+
+#: ../sndconfig.c:1449
+#, c-format
+msgid ""
+"sndconfig is a configuration tool for sound cards.\n"
+"\n"
+"%s%s\n"
+"\n"
+"Report bugs to sound-list@redhat.com"
+msgstr ""
+
+#: ../sndconfig.c:1455
+msgid "The automatic probing for PnP cards has been DISABLED"
+msgstr "PnP 卡自動偵測已被關閉"
+
+#: ../sndconfig.c:1457
+msgid "A probe will now be performed for any PnP cards"
+msgstr "正嘗試自動尋找 PnP 卡"
+
+#: ../sndconfig.c:1459
+msgid " that will be automatically configured."
+msgstr "會被自動設定"
+
+#: ../sndconfig.c:1471
+msgid "ERROR: No Sound Modules found"
+msgstr "錯誤: 找不到 Sound Module"
+
+#: ../sndconfig.c:1472
+msgid ""
+"You don't seem to be running a kernel with modular sound enabled. "
+"(soundcore.o was not found in the module search path).\n"
+"To use sndconfig, you must be running a kernel with modular sound, such as "
+"the kernel shipped with Red Hat Linux or a 2.2 or greater kernel. "
+msgstr "你的 kernel 好像沒有音效支援. "
+"(在 search path 找不到soundcore.o).\n"
+"你必要用 Red Hat Linux 的 kernel 或 2.2 版本或以上的 kernel. "
+
+#: ../sndconfig.c:1492
+msgid "Warning: DISPLAY is set"
+msgstr "警告: DISPLAY is set"
+
+#: ../sndconfig.c:1494
+msgid ""
+"Warning: DISPLAY is set. It is recommended that sndconfig *not* be run from "
+"X Windows. Continue anyways?"
+msgstr "警告: DISPLAY is set. sndconfig 不應該在 X Windows 上執行.不理會嗎?"
+
+#: ../sndconfig.c:1512
+msgid "PnP Probe Results"
+msgstr "PnP 尋找結果"
+
+#: ../sndconfig.c:1512
+#, c-format
+msgid ""
+"A PnP sound card was found in your system. The details are:\n"
+"\n"
+"     Model: %s"
+msgstr "在你的電腦上找到 PnP 卡.詳情:\n"
+"\n"
+"     形號: %s"
+
+#: ../sndconfig.c:1562
+msgid "Probe Error"
+msgstr "尋找錯誤"
+
+#: ../sndconfig.c:1564
+msgid ""
+"A PnP card has been detected, but the model identifier is unclear. You will "
+"need to select the exact model from the next screen."
+msgstr "找到 PnP 卡,但是未能確定仍號.請在下一幕選擇正確的形號."
+
+#: ../sndconfig.c:1576
+#, c-format
+msgid "%s Probe Results"
+msgstr "%s 尋找結果"
+
+#: ../sndconfig.c:1579
+#, c-format
+msgid ""
+"A %s sound card was found in your system. The details are:\n"
+"\n"
+"     Model: %s"
+msgstr "找到 %s 的音響卡.詳情:\n"
+"\n"
+"     形號: %s"
+
+#: ../sndconfig.c:1587
+#, c-format
+msgid "The %s is not supported."
+msgstr "%s 並不支援."
+
+#: ../sndconfig.c:1596
+#, c-format
+msgid ""
+"The %s is not currently supported; however, work is progressing on a driver."
+msgstr "暫時未有支援 %s 的 driver "
+
+#: ../sndconfig.c:1605
+#, c-format
+msgid ""
+"The %s is not supported currently; however, the ALSA project "
+"(http://www.alsa-project.org/) has a driver for this card."
+msgstr "%s 暫時未有支援,但是 ALSA project "
+"(http://www.alsa-project.org/) 有塊卡的 driver."
+
+#: ../sndconfig.c:1649
+#, c-format
+msgid "The %s is not currently supported."
+msgstr "%s 暫時未有支援."
+
+#: ../sndconfig.c:1666 ../sndconfig.c:1674
+msgid "No driver available"
+msgstr "沒有可用的 driver"
+
+#: ../sndconfig.c:1697
+msgid "Probe Results"
+msgstr "尋找結果"
+
+#: ../sndconfig.c:1698
+msgid ""
+"No PnP or PCI sound cards were found in your system. Please select your card "
+"type from the following list."
+msgstr "找不到 PnP 或 PCI 的音效卡.請在下表中選出您的音效卡."
+
+#: ../sndconfig.c:1722
+msgid "Card Information"
+msgstr "卡的資料"
+
+#: ../sndconfig.c:1752
+msgid "Autoconfiguration failed!"
+msgstr "自動設定失敗!"
+
+#: ../sndconfig.c:1755
+msgid ""
+"Autoconfiguration of your sound card failed. Now proceeding with manual "
+"configuration."
+msgstr "自動設定失敗,現正嘗試手動設定."
+
+#: ../pnpconf.c:93
+msgid "Something is wrong\n"
+msgstr "發生不明的錯誤\n"
+
+#: ../pnpconf.c:842
+msgid ""
+"There is already a file called /etc/isapnp.conf. The existing file will be "
+"renamed /etc/isapnp.conf.bak and a new file will be written."
+msgstr "已有一個叫 /etc/isapnp.conf 的檔案.現有的將會被改名為"
+"/etc/isapnp.conf.bak 而新的檔會被命名為 /etc/isapnp.conf."
+
+#: ../pnpconf.c:947
+msgid "No cards found, or error probing for pnp cards\n"
+msgstr "找不到卡，或尋找卡時發生錯誤\n"
+
+#: ../pnpconf.c:950
+#, c-format
+msgid "Found PnP Card ->%s<- ->%s<-\n"
+msgstr "找到PnP卡 ->%s-<- ->%s<-\n"
