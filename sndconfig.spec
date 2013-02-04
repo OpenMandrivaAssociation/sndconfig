@@ -1,42 +1,42 @@
 %define kudzu_version 1.1.40
 
-Name: sndconfig
-Version: 0.70
-Release: %mkrel 22
-License: GPL
-Summary: The Red Hat Linux sound configuration tool
-Group: System/Configuration/Hardware
-BuildRequires: newt-devel pciutils-devel sharutils
-BuildRequires: libslang-static-devel
+Name:		sndconfig
+Version:	0.70
+Release:	23
+License:	GPL
+Summary:	The Red Hat Linux sound configuration tool
+Group:		System/Configuration/Hardware
+URL: 		ftp://ftp.redhat.com/pub/linux/redhat/rawhide/SRPMS/SRPMS/
+BuildRequires:	newt-devel
+BuildRequires:	pciutils-devel
+BuildRequires:	sharutils
+BuildRequires:	slang-static-devel
 Source: %{name}-%{version}.tar.bz2
-Source1: %{name}.po
+Source1:	%{name}.po
 # (blino) include kudzu here since we don't want to release it
 # ugly ? no ...
-Source2: kudzu-%{kudzu_version}.tar.bz2
+Source2:	kudzu-%{kudzu_version}.tar.bz2
 # (blino) use modprobe and be 2.6 aware (.ko modules detection)
-Patch0: %{name}-0.70-use-modprobe.patch
-Patch1: %{name}-0.64.9-mdkconf.patch
+Patch0:		%{name}-0.70-use-modprobe.patch
+Patch1:		%{name}-0.64.9-mdkconf.patch
 # (blino) get kudzu to build without sysfs patch in pciutils
-Patch2: kudzu-1.1.40-comment_domain.patch
+Patch2:		kudzu-1.1.40-comment_domain.patch
 # (blino) statically link with included kudzu
-Patch3: %{name}-0.70-link_kudzu.patch
-Patch4: sndconfig-0.70-es-po.patch
+Patch3:		%{name}-0.70-link_kudzu.patch
+Patch4:		sndconfig-0.70-es-po.patch
 # (blino) fix assembler errors, from kudzu-1.2.24
-Patch5: kudzu-1.1.40-movl.patch
+Patch5:		kudzu-1.1.40-movl.patch
 # (blino) use u_int8_t instead of byte, from kudzu-1.2.24
-Patch6: kudzu-1.1.40-byte.patch
-Patch7: kudzu-1.1.40-fix-ifmask.patch
-Patch8: mips_buildfix.patch
+Patch6:		kudzu-1.1.40-byte.patch
+Patch7:		kudzu-1.1.40-fix-ifmask.patch
+Patch8:		mips_buildfix.patch
 # (blino) diet is needed to build kudzu
-BuildRequires: dietlibc-devel
+BuildRequires:	dietlibc-devel
 %ifarch %{ix86} alpha
-Requires: isapnptools >= 1.16, sox, playmidi, kernel >= 2.2.0
+Requires:	isapnptools >= 1.16, sox, playmidi, kernel >= 2.2.0
 %endif
-Requires: awesfx
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Requires:	awesfx
 ExcludeArch: ppc x86_64
-Prefix: %{_prefix}
-URL: ftp://ftp.redhat.com/pub/linux/redhat/rawhide/SRPMS/SRPMS/
 
 # (blino) use our own ugly find_requires script
 # to exclude GLIBC_PRIVATE Requires
@@ -79,30 +79,26 @@ chmod +x find_requires.sh
 %build
 # (blino) first build libkudzu.a in kudzu subdirectory
 %make -C kudzu libkudzu.a
-%make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+%make RPM_OPT_FLAGS="%{optflags}"
 
 %install
-rm -rf $RPM_BUILD_ROOT
 
 %makeinstall
 
-mv $RPM_BUILD_ROOT%{_sbindir}/%{name}{,.real}
-cat > $RPM_BUILD_ROOT%{_sbindir}/%{name} << EOF
+mv %{buildroot}%{_sbindir}/%{name}{,.real}
+cat > %{buildroot}%{_sbindir}/%{name} << EOF
 #!/bin/sh
 %{_sbindir}/%{name}.real && /sbin/generate-modprobe.conf > /etc/modprobe.d/sndconfig.conf
 EOF
-chmod +x $RPM_BUILD_ROOT%{_sbindir}/%{name}
+chmod +x %{buildroot}%{_sbindir}/%{name}
 
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES
-msgfmt %SOURCE1 -o $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES/%{name}.mo
+mkdir -p %{buildroot}%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES
+msgfmt %SOURCE1 -o %{buildroot}%{_datadir}/locale/zh_TW.Big5/LC_MESSAGES/%{name}.mo
 
 %find_lang %{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
-%defattr (-,root,root)
 %{_sbindir}/%{name}
 %{_sbindir}/%{name}.real
 %dir %{_datadir}/%{name}/
